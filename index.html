@@ -21,11 +21,41 @@
 	</style>
 
 	<script type="text/javascript">
-		var videoArray = ["www.youtube.com/embed/YX3tQ0X6Gok?", "www.youtube.com/embed/jvecCrSZYtM?", "www.youtube.com/embed/XDExIaqz2Ow?"];
+		var videoArray = ["YX3tQ0X6Gok",
+						 "jvecCrSZYtM", 
+						 "MdcuaeYV9oM",
+						 "oiziGLe1jBw",
+						 "Wnsdc7cTPuU",
+						 "s3N9pYZSIpI",
+						 "FbWeIDXnsrg?t=24s",
+						 "elGYZWU6Wy8",
+						 "jfVsu5MuyLQ",
+						 "90XLNQXN_74",
+						 "TN8YQVM1GQI",
+						 "6PKQE8FM2Uw",
+						 "NRItYDKSqpQ",
+						 "7QLSRMoKKS0",
+						 "1Ej_Wv9LU1A",
+						 "t3NOYMzVC3s",
+						 "ctBU8km42zA ",
+						 "N0gb9v4LI4o",
+						 "_oQAjtXz-Vc",
+						 "OMspkwGM0LE",
+						 "nda_OSWeyn8"];
+						 // "",
+						 // "",
+						 // "",
+						 // "",
+						 // "",
+						 // "",
+						 // "",
+						 // "",
+						 // "",
+						 // "",];
 
 		var randomVideoLink = function () {
 			var randomIndex = Math.floor(Math.random() * videoArray.length);
-			var videoLink = "http://" + videoArray[randomIndex] + "rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0";
+			var videoLink = "http://www.youtube.com/embed/" + videoArray[randomIndex] + "?rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0";
 			document.getElementById("embeded-video").src = videoLink;
 			console.log(videoLink);
 		}
